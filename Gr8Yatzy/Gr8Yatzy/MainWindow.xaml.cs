@@ -24,5 +24,27 @@ namespace Gr8Yatzy
         {
             InitializeComponent();
         }
+
+        private void btnRollDices_Click(object sender, RoutedEventArgs e)
+        {
+            int[] arr = new int[5] { 1, 2, 3, 4, 5 };
+            List<Dice> dices = new List<Dice>();
+
+            foreach (var item in arr)
+            {
+                dices.Add(new Dice());
+            }
+
+            Random random = new Random();
+
+            foreach (Dice d in dices)
+            {
+                d.Value = random.Next(1, 7);
+                //MessageBox.Show(d.Value.ToString());
+            }
+
+
+
+        }
     }
 }
