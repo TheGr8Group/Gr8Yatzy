@@ -7,6 +7,28 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/dice-1510067324x6W.jpg" Stretch="UniformToFill" />
+        </Grid.Background>
+        <Border BorderBrush="Black" Background="White" BorderThickness="1" Height="197" Margin="169,109,169,0" VerticalAlignment="Top" Opacity="0.8"/>
+
+
+
+
+        <Button Content="Button" HorizontalAlignment="Left" Margin="383,214,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Spela" Margin="257,328,257,0" VerticalAlignment="Top" Height="63" Background="#FFE4D118" FontSize="36" FontWeight="Bold" FontFamily="Hobo Std" />
+        <Label Content="Gr8 Yatzy" Foreground="Maroon" Margin="236,33,236,0" VerticalAlignment="Top" Height="62" FontSize="48" FontFamily="Gill Sans Ultra Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="258,185,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="258,213,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <ListBox HorizontalAlignment="Left" Height="100" Margin="474,150,0,0" VerticalAlignment="Top" Width="100"/>
+        <ComboBox HorizontalAlignment="Left" Margin="373,270,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Namn" HorizontalAlignment="Left" Margin="183,181,0,0" VerticalAlignment="Top"/>
+        <Label Content="Smeknamn" HorizontalAlignment="Left" Margin="183,213,0,0" VerticalAlignment="Top"/>
+        <Label Content="Spelvariant" HorizontalAlignment="Left" Margin="284,266,0,0" VerticalAlignment="Top"/>
+        <Label Content="Lägg till spelare" HorizontalAlignment="Left" Margin="236,150,0,0" VerticalAlignment="Top"/>
+
+
+
+
     </Grid>
 </Window>
