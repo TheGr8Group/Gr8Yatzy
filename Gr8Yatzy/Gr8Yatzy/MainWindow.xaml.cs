@@ -23,31 +23,14 @@ namespace Gr8Yatzy
         public MainWindow()
         {
             InitializeComponent();
+
+            Loaded += MyWindow_Loaded;
         }
 
-        private int[] RollDices()
+        private void MyWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            Yatzy yatzy = new Yatzy();
-
-            Random random = new Random();
-            yatzy.Dices = new int[5];
-
-            for (int i = 0; i < yatzy.Dices.Length; i++)
-            {
-                yatzy.Dices[i] = random.Next(1, 7);
-            }
-
-            return yatzy.Dices;
-            //foreach (var item in yatzy.Dices)
-            //{
-            //    lstBoxTest.Items.Add(item);
-            //}
-
+            MainFrame.NavigationService.Navigate(new StartPage());
         }
 
-        private void btnTest_Click(object sender, RoutedEventArgs e)
-        {
-            RollDices();
-        }
     }
 }
