@@ -11,7 +11,7 @@ namespace Gr8Yatzy
         public int GameID { get; set; }
         public int Rolls { get; set; }
         public List<Player> Players { get; set; }// hur sätta ett maxvärde till en lista?
-        public int MaxAlloawedPlayers { get; set; }
+        public int MaxAllowedPlayers { get; set; }
         public int MinAllowedPlayers { get; set; }
         public int[] Dices { get; set; }
 
