@@ -12,7 +12,9 @@ namespace Gr8Yatzy
     }
     class Protocol
     {
-        public int Ones { get; set; }
+        private int result;
+
+        public int Ones { get { return result; } set { Ones = result; } }
         public int Twos { get; set; }
         public int Threes { get; set; }
         public int Fours { get; set; }
@@ -31,18 +33,6 @@ namespace Gr8Yatzy
         public int Chance { get; set; }
         public int Yatzy { get { return 50; } }
         public int TotalSum { get; set; }
-
-        public void SetValues(List<Dice> savedDices, YatzyValues row)
-        {
-            foreach (Dice d in savedDices)
-            {
-                if (row.Equals(d.Value))// använder enums för att identifiera rad i protokoll
-                {
-                    // använda enumns för att ange vilken int som ges värde.
-
-                }
-            }
-        }
 
     }
 }

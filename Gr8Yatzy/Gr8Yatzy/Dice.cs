@@ -12,5 +12,9 @@ namespace Gr8Yatzy
         public int Value { get; set; }
         public bool IsSaved { get; set; }
 
+        public override string ToString()
+        {
+            return $"{Value}"; 
+        }
     }
 }

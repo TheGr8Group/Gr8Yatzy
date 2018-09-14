@@ -55,9 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Dice.cs" />
     <Compile Include="Protocol.cs" />
     <Compile Include="Yatzy.cs" />
+    <Compile Include="YatzyRules.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
