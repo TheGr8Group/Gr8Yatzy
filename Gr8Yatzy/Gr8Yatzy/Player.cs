@@ -11,6 +11,6 @@ namespace Gr8Yatzy
         public int PlayerID { get; set; }
         public string NickName { get; set; }
         public string Password { get; set; }
-
+        public Protocol PlayerProtocol { get; set; }
     }
 }
