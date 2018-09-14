@@ -16,7 +16,7 @@
 
 
         <Button Content="Button" HorizontalAlignment="Left" Margin="383,214,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Spela" Margin="257,328,257,0" VerticalAlignment="Top" Height="63" Background="#FFE4D118" FontSize="36" FontWeight="Bold" FontFamily="Hobo Std" />
+        <Button Content="Spela" Margin="257,328,257,0" VerticalAlignment="Top" Height="63" Background="#FFE4D118" FontSize="36" FontWeight="Bold" FontFamily="Hobo Std" BorderBrush="#FFFF8E06" />
         <Label Content="Gr8 Yatzy" Foreground="Maroon" Margin="236,33,236,0" VerticalAlignment="Top" Height="62" FontSize="48" FontFamily="Gill Sans Ultra Bold"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="258,185,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="258,213,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
