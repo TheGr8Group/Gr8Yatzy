@@ -8,7 +8,7 @@ namespace Gr8Yatzy
 {
     enum YatzyValues
     {
-        Ones, Twos, Threes, Fours, Fives, Sixes, OnePair, TwoPair, ThreeOfAKind, FourOfAKind, SmallStraight, LargeSraight, FullHouse, Chance, Yatzy
+        Ones, Twos, Threes, Fours, Fives, Sixes, OnePair, TwoPair, ThreeOfAKind, FourOfAKind, SmallStraight, LargeStraight, FullHouse, Chance, Yatzy
     }
     class Protocol
     {
