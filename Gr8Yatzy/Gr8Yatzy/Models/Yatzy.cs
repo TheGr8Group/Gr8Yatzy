@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Gr8Yatzy
 {
-    class Yatzy
+    public class Yatzy
     {
         public int GameID { get; set; }
         public int Rolls { get; set; }
@@ -17,6 +17,9 @@ namespace Gr8Yatzy
 
         int[] dices = new int[5]; // microsoft rekommenderar inte arrays som propertys. Vi kan göra den som field ist?
         bool[] savedDices = new bool[5];//test
+
+
+
 
         /// <summary>
         /// Kastar 5 tärningar.

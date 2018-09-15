@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Gr8Yatzy
 {
-    class Player
+    public class Player
     {
         public int PlayerID { get; set; }
         public string NickName { get; set; }

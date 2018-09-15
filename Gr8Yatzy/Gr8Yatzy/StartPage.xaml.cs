@@ -26,10 +26,13 @@ namespace Gr8Yatzy
         }
 
         Yatzy yatzy = new Yatzy();
-        
+        YatzyRules yr = new YatzyRules();
+
         private void btnTest_Click(object sender, RoutedEventArgs e)
         {
-            yatzy.RollDices();
+            //yatzy.RollDices();
+            yr.ValidateYatzyRule();
+
         }
 
         private void btnStartGame_Click(object sender, RoutedEventArgs e)

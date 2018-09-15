@@ -26,18 +26,9 @@ namespace Gr8Yatzy
             InitializeComponent();
 
         }
-        private void AddPlayerProtocols(List<Player> players)
+        private void AddPlayerProtocols(/*List<Player> players*/)
         {
-            
-            //foreach (Player p in players)
-            //{
-            //    p.PlayerProtocol protocol = 
-            //}
-        }
-        
-        
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
+            // Flyttade koden under knappen hit. Behöver clickeventet // Annica
             List<Player> players = new List<Player>();
             Player p;
             p = new Player() { NickName = "Maestro126" };
@@ -48,6 +39,15 @@ namespace Gr8Yatzy
             players.Add(p);
             p = new Player() { NickName = "Kristian" };
             players.Add(p);
+            //foreach (Player p in players)
+            //{
+            //    p.PlayerProtocol protocol = 
+            //}
+        }
+       
+        
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
 
         }
     }
