@@ -27,11 +27,14 @@ namespace Gr8Yatzy
 
         Yatzy yatzy = new Yatzy();
         YatzyRules yr = new YatzyRules();
+        Calculations c = new Calculations();
 
         private void btnTest_Click(object sender, RoutedEventArgs e)
         {
             //yatzy.RollDices();
-            yr.ValidateYatzyRule();
+            //yr.ValidateYatzyRule();
+            yatzy = c.SetUpperSum();
+
 
         }
 

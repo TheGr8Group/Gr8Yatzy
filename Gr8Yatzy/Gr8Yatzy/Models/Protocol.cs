@@ -14,14 +14,16 @@ namespace Gr8Yatzy
     {
         private int result;
 
-        public int Ones { get { return result; } set { Ones = result; } }// idé om att sätta värder direkt i protocol.
+        public int Ones { get; set; }
         public int Twos { get; set; }
         public int Threes { get; set; }
         public int Fours { get; set; }
         public int Fives { get; set; }
         public int Sixes { get; set; }
         public int UpperSum { get; set; }
-        public int Bonus { get; set; } // Kan ju räkna ut bonusen direk och sätta värdet direkt i Bonus
+
+
+        public int Bonus { get; private set; } 
 
         public int OnePair { get; set; }
         public int TwoPair { get; set; }
@@ -31,10 +33,18 @@ namespace Gr8Yatzy
         public int LargeStraight { get; set; }
         public int FullHouse { get; set; }
         public int Chance { get; set; }
-        public int Yatzy { get { return 50; } }
+        public int Yatzy { get { return 50; } }// Behöver dubbelkolla om det funkar
         public int TotalSum { get; set; }
 
-        public bool IsOnes { get; set; }// idé om att sätta värder direkt i protocol.
+        public void SetBonus()
+        {
+            if (UpperSum >= 63)
+            {
+                Bonus = 50;
+                UpperSum += Bonus;
+            }
+        }
+        public bool IsOnes { get; set; }
         public bool IsTwos { get; set; }
         public bool IsThrees { get; set; }
         public bool IsFours { get; set; }
