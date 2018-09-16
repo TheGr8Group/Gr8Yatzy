@@ -25,22 +25,61 @@ namespace Gr8Yatzy
             InitializeComponent();
         }
 
-        Yatzy yatzy = new Yatzy();
+        //Yatzy yatzy = new Yatzy();
+        //YatzyRules yr = new YatzyRules();
+        //Calculations c = new Calculations();
+
+        private List<Player> AddPlayerProtocols(/*List<Player> players*/)
+        {
+            // Flyttade koden under knappen hit. Behöver clickeventet // Annica
+            List<Player> players = new List<Player>();
+            Player p;
+            p = new Player() { NickName = "Maestro126" };
+            players.Add(p);
+            p = new Player() { NickName = "Annica" };
+            players.Add(p);
+            p = new Player() { NickName = "Giza" };
+            players.Add(p);
+            p = new Player() { NickName = "Kristian" };
+            players.Add(p);
+            return players;
+            //foreach (Player p in players)
+            //{
+            //    p.PlayerProtocol protocol = 
+            //}
+        }
+        Yatzy yatzy;
         YatzyRules yr = new YatzyRules();
         Calculations c = new Calculations();
+
+        private Yatzy CreateGame()
+        {
+            yatzy = new Yatzy
+            {
+                GameID = 1,
+                Rolls = 3,
+                Players = AddPlayerProtocols()
+
+            };
+            return yatzy;
+        }
+
 
         private void btnTest_Click(object sender, RoutedEventArgs e)
         {
             //yatzy.RollDices();
             //yr.ValidateYatzyRule();
-            yatzy = c.SetUpperSum();
+            //yatzy = c.SetUpperSum();
+
 
 
         }
 
         private void btnStartGame_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new GameBoard());
+            yatzy = CreateGame();
+
+            this.NavigationService.Navigate(new GameBoard(yatzy));
 
 
             //nav.Navigate(new Uri("GameBoard.xaml", UriKind.RelativeOrAbsolute));

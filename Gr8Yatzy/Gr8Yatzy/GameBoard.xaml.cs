@@ -21,34 +21,52 @@ namespace Gr8Yatzy
     /// </summary>
     public partial class GameBoard : Page
     {
-        public GameBoard()
+        public GameBoard(Yatzy yatzy)
         {
             InitializeComponent();
+            this.yatzy = yatzy;
 
         }
-        private void AddPlayerProtocols(/*List<Player> players*/)
-        {
-            // Flyttade koden under knappen hit. Behöver clickeventet // Annica
-            List<Player> players = new List<Player>();
-            Player p;
-            p = new Player() { NickName = "Maestro126" };
-            players.Add(p);
-            p = new Player() { NickName = "Annica" };
-            players.Add(p);
-            p = new Player() { NickName = "Giza" };
-            players.Add(p);
-            p = new Player() { NickName = "Kristian" };
-            players.Add(p);
-            //foreach (Player p in players)
-            //{
-            //    p.PlayerProtocol protocol = 
-            //}
-        }
+        Yatzy yatzy;
        
-        
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void RollDices()
         {
+            int[] dices = yatzy.RollDices();
+        }
+        private void btnRollDices_Click(object sender, RoutedEventArgs e)
+        {
+            //RollDices();//Test
+            //PrintDices(); //Test
+            PrintDiceValue();
+            //yatzy = CreateGame();//Test
+        }
+        private void PrintDiceValue()
+        {
+            int[] dices = yatzy.RollDices();
 
+            dice1.Content = dices[0];
+            dice2.Content = dices[1];
+            dice3.Content = dices[2];
+            dice4.Content = dices[3];
+            dice5.Content = dices[4];
+           
+
+        }
+        private List<CheckBox> SaveDices()
+        {
+            var controls = new List<CheckBox>();
+            controls.Add(dice1);
+            controls.Add(dice1);
+            controls.Add(dice2);
+            controls.Add(dice3);
+            controls.Add(dice4);
+            yatzy.CheckIfSaved(controls);
+            return controls;
+        }
+
+        private void btnSpara_Click(object sender, RoutedEventArgs e)
+        {
+            SaveDices();
         }
     }
 }
