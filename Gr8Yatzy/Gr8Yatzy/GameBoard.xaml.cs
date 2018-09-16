@@ -28,45 +28,85 @@ namespace Gr8Yatzy
 
         }
         Yatzy yatzy;
-       
-        private void RollDices()
+        Player p = new Player();
+        YatzyRules yr = new YatzyRules();
+
+        private int[] RollDices()
         {
-            int[] dices = yatzy.RollDices();
+            int[] dices = yatzy.SetDiceValue();
+            return dices;
         }
         private void btnRollDices_Click(object sender, RoutedEventArgs e)
         {
-            //RollDices();//Test
+            //SetDiceValue();//Test
             //PrintDices(); //Test
-            PrintDiceValue();
+            PrintDiceValue(RollDices());
+            p = yr.ValidateYatzyRule();
+            SetBorderBrush(p);
+            SaveDices();
+
             //yatzy = CreateGame();//Test
         }
-        private void PrintDiceValue()
-        {
-            int[] dices = yatzy.RollDices();
 
+        private void PrintDiceValue(int[] dices)
+        {
             dice1.Content = dices[0];
             dice2.Content = dices[1];
             dice3.Content = dices[2];
             dice4.Content = dices[3];
             dice5.Content = dices[4];
-           
+        }
+
+        /// <summary>
+        /// Kontrollerar om det är möjligt att föra in det slagna värdet i textboxen och markerar bordern grön
+        /// </summary>
+        /// <param name="p"></param>
+        private void SetBorderBrush(Player p)
+        {
+
+            if (p.PlayerProtocol.IsOnes)
+            {
+                txtBoxOnes.BorderBrush = System.Windows.Media.Brushes.Green;
+            }
+            if (p.PlayerProtocol.IsTwos)
+            {
+                txtBoxTwos.BorderBrush = System.Windows.Media.Brushes.Green;
+            }
+            if (p.PlayerProtocol.IsThrees)
+            {
+                txtBoxThrees.BorderBrush = System.Windows.Media.Brushes.Green;
+            }
+            if (p.PlayerProtocol.IsFours)
+            {
+                txtBoxFours.BorderBrush = System.Windows.Media.Brushes.Green;
+            }
+             if (p.PlayerProtocol.IsFives)
+            {
+                txtBoxFives.BorderBrush = System.Windows.Media.Brushes.Green;
+            }
+             if (p.PlayerProtocol.IsSixes)
+            {
+                txtBoxSixes.BorderBrush = System.Windows.Media.Brushes.Green;
+            }
 
         }
-        private List<CheckBox> SaveDices()
+
+        private void SaveDices()
         {
             var controls = new List<CheckBox>();
+
             controls.Add(dice1);
             controls.Add(dice1);
             controls.Add(dice2);
             controls.Add(dice3);
             controls.Add(dice4);
+
             yatzy.CheckIfSaved(controls);
-            return controls;
         }
 
         private void btnSpara_Click(object sender, RoutedEventArgs e)
         {
-            SaveDices();
+            //not in use
         }
     }
 }

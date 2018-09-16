@@ -8,24 +8,25 @@
       Title="GameBoard" Height="855.238" Width="1024">
 
     <Grid Background="White">
-        <Button x:Name="btnRollDices" Content="Kasta tärningar" HorizontalAlignment="Left" Margin="134,345,0,0" VerticalAlignment="Top" Width="98" Click="btnRollDices_Click"/>
-        <Label x:Name="lblOnes" Content="Ettor" HorizontalAlignment="Left" Margin="60,95,0,0" VerticalAlignment="Top" Height="23"/>
-        <Label x:Name="lblTwos" Content="Tvåor" HorizontalAlignment="Left" Margin="60,123,0,0" VerticalAlignment="Top" Height="23"/>
-        <Label x:Name="lblThrees" Content="Treor" HorizontalAlignment="Left" Margin="60,151,0,0" VerticalAlignment="Top" Height="23"/>
-        <Label x:Name="lblFours" Content="Fyror" HorizontalAlignment="Left" Margin="62,179,0,0" VerticalAlignment="Top" Height="23"/>
-        <Label x:Name="lblFives" Content="Femmor" HorizontalAlignment="Left" Margin="62,207,0,0" VerticalAlignment="Top" Height="23"/>
-        <Label x:Name="lblSixes" Content="Sexor" HorizontalAlignment="Left" Margin="62,238,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.752,-1.176" Height="23"/>
-        <TextBox x:Name="txtBoxOnes" HorizontalAlignment="Left" Height="23" Margin="134,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
-        <TextBox x:Name="txtBoxTwos" HorizontalAlignment="Left" Height="23" Margin="134,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
-        <TextBox x:Name="txtBoxThrees" HorizontalAlignment="Left" Height="23" Margin="134,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
-        <TextBox x:Name="txtBoxFours" HorizontalAlignment="Left" Height="23" Margin="134,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
-        <TextBox x:Name="txtBoxFives" HorizontalAlignment="Left" Height="23" Margin="134,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
-        <TextBox x:Name="txtBoxSixes" HorizontalAlignment="Left" Height="23" Margin="134,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
-        <CheckBox x:Name="dice1" Content="CheckBox" HorizontalAlignment="Left" Margin="616,140,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="dice2" Content="CheckBox" HorizontalAlignment="Left" Margin="616,161,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="dice3" Content="CheckBox" HorizontalAlignment="Left" Margin="616,178,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="dice4" Content="CheckBox" HorizontalAlignment="Left" Margin="616,194,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="dice5" Content="CheckBox" HorizontalAlignment="Left" Margin="616,217,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnSpara" Content="spara tärningar" HorizontalAlignment="Left" Margin="684,345,0,0" VerticalAlignment="Top" Width="106" Click="btnSpara_Click"/>
+        <Button x:Name="btnRollDices" Content="Kasta tärningar" HorizontalAlignment="Left" Margin="352,263,0,0" VerticalAlignment="Top" Width="202" Click="btnRollDices_Click" Height="87"/>
+        <Label x:Name="lblOnes" Content="Ettor" HorizontalAlignment="Left" Margin="50,37,0,0" VerticalAlignment="Top" Height="23"/>
+        <Label x:Name="lblTwos" Content="Tvåor" HorizontalAlignment="Left" Margin="50,65,0,0" VerticalAlignment="Top" Height="23"/>
+        <Label x:Name="lblThrees" Content="Treor" HorizontalAlignment="Left" Margin="50,93,0,0" VerticalAlignment="Top" Height="23"/>
+        <Label x:Name="lblFours" Content="Fyror" HorizontalAlignment="Left" Margin="52,121,0,0" VerticalAlignment="Top" Height="23"/>
+        <Label x:Name="lblFives" Content="Femmor" HorizontalAlignment="Left" Margin="52,149,0,0" VerticalAlignment="Top" Height="23"/>
+        <Label x:Name="lblSixes" Content="Sexor" HorizontalAlignment="Left" Margin="52,180,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.752,-1.176" Height="23"/>
+        <TextBox x:Name="txtBoxOnes" HorizontalAlignment="Left" Height="23" Margin="124,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
+        <TextBox x:Name="txtBoxTwos" HorizontalAlignment="Left" Height="23" Margin="124,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
+        <TextBox x:Name="txtBoxThrees" HorizontalAlignment="Left" Height="23" Margin="124,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
+        <TextBox x:Name="txtBoxFours" HorizontalAlignment="Left" Height="23" Margin="124,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
+        <TextBox x:Name="txtBoxFives" HorizontalAlignment="Left" Height="23" Margin="124,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
+        <TextBox x:Name="txtBoxSixes" HorizontalAlignment="Left" Height="23" Margin="124,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
+        <CheckBox x:Name="dice1" Content=" " HorizontalAlignment="Left" Margin="616,89,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="dice2" Content=" " HorizontalAlignment="Left" Margin="616,108,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="dice3" Content=" " HorizontalAlignment="Left" Margin="616,127,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="dice4" Content=" " HorizontalAlignment="Left" Margin="616,146,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="dice5" Content=" " HorizontalAlignment="Left" Margin="616,166,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnSpara" Content="spara tärningar" HorizontalAlignment="Left" Margin="889,486,0,0" VerticalAlignment="Top" Width="106" Click="btnSpara_Click"/>
+        <Label x:Name="lblDicesValues" Content="Tärningsresultat" HorizontalAlignment="Left" Margin="628,58,0,0" VerticalAlignment="Top" Width="99"/>
     </Grid>
 </Page>

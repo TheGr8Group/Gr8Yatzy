@@ -34,7 +34,7 @@ namespace Gr8Yatzy
         /// Kastar 5 tärningar.
         /// </summary>
         /// <returns></returns>
-        public int[] RollDices(/*bool[] savedDices*/) // parameter utkommenterad för testnings skull
+        public int[] SetDiceValue(/*bool[] savedDices*/) // parameter utkommenterad för testnings skull
         {
             Random random = new Random();
 

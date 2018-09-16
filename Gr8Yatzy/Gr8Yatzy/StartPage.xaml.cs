@@ -67,7 +67,7 @@ namespace Gr8Yatzy
 
         private void btnTest_Click(object sender, RoutedEventArgs e)
         {
-            //yatzy.RollDices();
+            //yatzy.SetDiceValue();
             //yr.ValidateYatzyRule();
             //yatzy = c.SetUpperSum();
 
