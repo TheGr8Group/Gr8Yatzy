@@ -29,5 +29,7 @@
         <CheckBox x:Name="dice5" Content=" " HorizontalAlignment="Left" Margin="616,166,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnSpara" Content="spara tärningar" HorizontalAlignment="Left" Margin="889,486,0,0" VerticalAlignment="Top" Width="106" Click="btnSpara_Click"/>
         <Label x:Name="lblDicesValues" Content="Tärningsresultat" HorizontalAlignment="Left" Margin="628,58,0,0" VerticalAlignment="Top" Width="99"/>
+        <Label x:Name="lblUpperSum" Content="Summa" HorizontalAlignment="Left" Margin="52,208,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.752,-1.176" Height="23"/>
+        <TextBox x:Name="txtBoxUpperSum" HorizontalAlignment="Left" Height="23" Margin="124,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
     </Grid>
 </Page>
