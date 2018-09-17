@@ -108,9 +108,6 @@ namespace Gr8Yatzy
             yatzy.CheckIfSaved(controls);
         }
 
-        private void btnSpara_Click(object sender, RoutedEventArgs e)
-        {
-            //not in use
-        }
+        
     }
 }
