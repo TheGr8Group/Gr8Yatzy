@@ -70,27 +70,27 @@ namespace Gr8Yatzy
 
             if (p.PlayerProtocol.IsOnes)
             {
-                txtBoxOnes.BorderBrush = System.Windows.Media.Brushes.Green;
+                txtOnes1.BorderBrush = System.Windows.Media.Brushes.Green;
             }
             if (p.PlayerProtocol.IsTwos)
             {
-                txtBoxTwos.BorderBrush = System.Windows.Media.Brushes.Green;
+                txtTwos1.BorderBrush = System.Windows.Media.Brushes.Green;
             }
             if (p.PlayerProtocol.IsThrees)
             {
-                txtBoxThrees.BorderBrush = System.Windows.Media.Brushes.Green;
+                txtThrees1.BorderBrush = System.Windows.Media.Brushes.Green;
             }
             if (p.PlayerProtocol.IsFours)
             {
-                txtBoxFours.BorderBrush = System.Windows.Media.Brushes.Green;
+                txtFours1.BorderBrush = System.Windows.Media.Brushes.Green;
             }
              if (p.PlayerProtocol.IsFives)
             {
-                txtBoxFives.BorderBrush = System.Windows.Media.Brushes.Green;
+                txtFives1.BorderBrush = System.Windows.Media.Brushes.Green;
             }
              if (p.PlayerProtocol.IsSixes)
             {
-                txtBoxSixes.BorderBrush = System.Windows.Media.Brushes.Green;
+                txtSixes1.BorderBrush = System.Windows.Media.Brushes.Green;
             }
 
         }
