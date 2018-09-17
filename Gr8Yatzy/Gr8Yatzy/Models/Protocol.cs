@@ -36,6 +36,10 @@ namespace Gr8Yatzy
         public int Yatzy { get; }// Behöver dubbelkolla om det funkar
         public int TotalSum { get; set; }
 
+        /// <summary>
+        /// UNDER UTVECKLING
+        /// Anger värdet på propertyn Bonus
+        /// </summary>
         public void SetBonus()
         {
             if (UpperSum >= 63)
