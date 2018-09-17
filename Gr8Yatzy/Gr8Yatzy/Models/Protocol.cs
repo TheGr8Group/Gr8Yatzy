@@ -33,7 +33,7 @@ namespace Gr8Yatzy
         public int LargeStraight { get; set; }
         public int FullHouse { get; set; }
         public int Chance { get; set; }
-        public int Yatzy { get { return 50; } }// Behöver dubbelkolla om det funkar
+        public int Yatzy { get; }// Behöver dubbelkolla om det funkar
         public int TotalSum { get; set; }
 
         public void SetBonus()
@@ -44,6 +44,9 @@ namespace Gr8Yatzy
                 UpperSum += Bonus;
             }
         }
+
+        //START 
+        //Bool-propertiserna hör kanske inte hemma här, men vart?
         public bool IsOnes { get; set; }
         public bool IsTwos { get; set; }
         public bool IsThrees { get; set; }
@@ -60,7 +63,14 @@ namespace Gr8Yatzy
         public bool IsFullHouse { get; set; }
         public bool IsChance { get; set; }
         public bool IsYatzy { get; set; }
+        //SLUT
 
+        /// <summary>
+        /// UNDER UTVECKLING - osäker på om det skulle kunna funka...
+        /// Är tänkt att användas för att identifiera raden och sätta radpoängen spelaren valt
+        /// </summary>
+        /// <param name="result"></param>
+        /// <param name="row"></param>
         public void SetRowPoints(int result, YatzyRow row)
         {
             switch (row)
