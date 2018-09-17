@@ -60,7 +60,7 @@
                     <TextBox x:Name="txtSixes1" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="Black"/>
                     <TextBox x:Name="txtUpperSum1" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="Black"/>
                     <TextBox x:Name="txtBonus1" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="Black"/>
-                    <TextBox x:Name="txtxOnePair1" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="Black"/>
+                    <TextBox x:Name="txtOnePair1" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="Black"/>
                     <TextBox x:Name="txtTwoPair1" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="Black"/>
                     <TextBox x:Name="txtThreeOfAKind1" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="Black"/>
                     <TextBox x:Name="txtFourOfAKind1" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="Black"/>
