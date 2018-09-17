@@ -36,6 +36,8 @@ namespace Gr8Yatzy
             int[] dices = yatzy.SetDiceValue();
             return dices;
         }
+
+
         private void btnRollDices_Click(object sender, RoutedEventArgs e)
         {
             //SetDiceValue();//Test
@@ -48,6 +50,7 @@ namespace Gr8Yatzy
             //yatzy = CreateGame();//Test
         }
 
+        //Metod för att skriva ut tärningarnas värde i gränssnittet
         private void PrintDiceValue(int[] dices)
         {
             dice1.Content = dices[0];
