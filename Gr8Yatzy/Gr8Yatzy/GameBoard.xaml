@@ -6,6 +6,7 @@
       xmlns:local="clr-namespace:Gr8Yatzy"
       mc:Ignorable="d"
       Title="GameBoard" Height="855.238" Width="1024">
+    <!--Hej-->
 
     <Grid Background="White">
         <Button x:Name="btnRollDices" Content="Kasta tärningar" HorizontalAlignment="Left" Margin="352,263,0,0" VerticalAlignment="Top" Width="202" Click="btnRollDices_Click" Height="87"/>
