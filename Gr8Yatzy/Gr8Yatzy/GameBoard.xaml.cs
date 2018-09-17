@@ -51,7 +51,7 @@ namespace Gr8Yatzy
         }
 
         //Metod för att skriva ut tärningarnas värde i gränssnittet
-        //
+        // hej hopp
         private void PrintDiceValue(int[] dices)
         {
             dice1.Content = dices[0];
